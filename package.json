@@ -1,0 +1,23 @@
+{
+  "name": "vue-pretty-logger",
+  "version": "1.0.0",
+  "description": "Pretty logger for Vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TaroXin/vue-pretty-logger.git"
+  },
+  "keywords": [
+    "logger",
+    "vue-pretty-logger",
+    "pretty-logger",
+    "pretty",
+    "pretty-logger-loader",
+    "logger-loader"
+  ],
+  "author": "YangXin",
+  "license": "MIT"
+}
