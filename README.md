@@ -1,2 +1,5 @@
 # vue-pretty-logger
-Pretty logger for Vue
+
+> This is a loader of .vue file
+
+### hot to use
