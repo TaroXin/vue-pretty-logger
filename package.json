@@ -1,6 +1,6 @@
 {
   "name": "vue-pretty-logger",
-  "version": "0.0.2",
+  "version": "0.3.0",
   "author": "YangXin",
   "description": "Pretty logger for Vue",
   "keywords": [
@@ -14,7 +14,8 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "jest",
-    "dev": "webpack-dev-server --config example/webpack.config.js --inline --hot"
+    "dev": "webpack-dev-server --config example/webpack.config.js --inline --hot",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "repository": {
     "type": "git",
@@ -46,4 +47,5 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   }
+  
 }
