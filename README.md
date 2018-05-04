@@ -26,7 +26,7 @@
 ``` javascript
 /**
  * // {#} is hook
- * So the result is the console print 123.
+ * So the result is the console prints 123.
  * Did you feel cool?
  */
 let a = 123 // {#}
