@@ -13,7 +13,7 @@
             let a = 123 // {#}
 
             let b
-            b = 456 // {#}
+            b = 456 // {#} -i
 
             /**
              * test function declaration
@@ -27,7 +27,7 @@
             /**
              * test function call
              */
-            this.testFunc3() // {#} 
+            this.testFunc3() // {#} -w
             
             // no support for the time being
             // this.testFunc4(1, { // {#}
@@ -38,10 +38,10 @@
         },
 
         methods: {
-            testFunc1 (testStr) { // {#} 
+            testFunc1 (testStr) { // {#} -e
                 // console.log(testStr)
             },
-            testFunc2 (testSrt1, testObject2) { // {#}
+            testFunc2 (testSrt1, testObject2) { // {#} -w
 
             },
 

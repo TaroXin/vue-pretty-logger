@@ -22,7 +22,11 @@ module.exports = {
                         loader: 'vue-loader'
                     },
                     {
-                        loader: path.join(__dirname, '../lib/index.js')
+                        loader: path.join(__dirname, '../lib/index.js'),
+                        options: {
+                            tag: 'Pretty_Logger',
+                            dev: true,
+                        }
                     }
                 ]
             }
