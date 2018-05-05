@@ -13,7 +13,7 @@
             let a = 123 // {#}
 
             let b
-            b = 456 // {#} -i
+            b = 456 // {#} -i -t TEST
 
             /**
              * test function declaration
