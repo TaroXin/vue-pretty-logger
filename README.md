@@ -2,6 +2,8 @@
 
 > **NOTE:** This is a loader of .vue file
 
+[![Build Status](https://travis-ci.org/TaroXin/vue-pretty-logger.svg?branch=master)](https://travis-ci.org/TaroXin/vue-pretty-logger)
+
 ### What is Vue pretty logger loader ?
 `vue-pretty-logger` is a loader for webpack, you can use it  in your .vue file
 
