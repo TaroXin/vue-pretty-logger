@@ -38,7 +38,7 @@
 
             this.testFunc5('with -time') // {#} -time -sign
 
-            this.testFunc6('with -profile') // {#} -profile
+            this.testFunc6('with -profile') // {#} -stop -profile
         },
 
         methods: {
