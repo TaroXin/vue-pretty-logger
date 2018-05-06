@@ -35,6 +35,10 @@
             // }) 
             // recommend to use this like this
             this.testFunc4(1, {count: 1}) // {#}
+
+            this.testFunc5('with -time') // {#} -time -sign
+
+            this.testFunc6('with -profile') // {#} -profile
         },
 
         methods: {
@@ -50,6 +54,12 @@
             },
             testFunc4 (num, data) {
                 return num + data.count
+            },
+            testFunc5 (command) {
+                
+            },
+            testFunc6 (command) {
+
             }
         }
     }
