@@ -2,7 +2,7 @@ const loaderParser = require('../lib/utils/logger-parser')
 
 test('test parse logger with normal', () => {
     let test = 'let a = 0 // {#}'
-    let testResult = 'let a = 0\nconsole.log(a)\n'
+    let testResult = 'let a = 0\nconsole.log(a)'
     expect(loaderParser.parseLogger(test, {hook: '#'})).toBe(testResult)
 })
 
@@ -14,6 +14,6 @@ test('test function declaration', () => {
 
 test('test function declaration with params', () => {
     let test = 'test (a, b) { // {#}'
-    let testResult = 'test (a, b) {\nconsole.log(a, b)\n'
+    let testResult = 'test (a, b) {\nconsole.log(a, b)'
     expect(loaderParser.parseLogger(test, {hook: '#'})).toBe(testResult)
 })

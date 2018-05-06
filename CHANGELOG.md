@@ -1,3 +1,23 @@
+<a name="0.5.2"></a>
+## 0.5.2 (2018-05-06)
+
+
+### Features
+
+* add command that control the currently displayed tag ([46dd72b](https://github.com/TaroXin/vue-pretty-logger/commit/46dd72b))
+* add console for function declarations and call ([d6905e1](https://github.com/TaroXin/vue-pretty-logger/commit/d6905e1))
+* add control of the log output type ([509cea6](https://github.com/TaroXin/vue-pretty-logger/commit/509cea6))
+* add the -sign command to display the corresponding key value of the output value ([a3378a3](https://github.com/TaroXin/vue-pretty-logger/commit/a3378a3))
+
+
+### BREAKING CHANGES
+
+* add -sign command
+* add control of the log output type
+* add function logger
+
+
+
 <a name="0.4.0"></a>
 # 0.4.0 (2018-05-05)
 

@@ -10,7 +10,7 @@
             /**
              * test assignment
              */
-            let a = 123 // {#}
+            let a = 123 // {#} -sign
 
             let b
             b = 456 // {#} -i -t TEST -sign
@@ -41,8 +41,8 @@
             testFunc1 (testStr) { // {#} -e
                 // console.log(testStr)
             },
-            testFunc2 (testSrt1, testObject2) { // {#} -w -sign
-
+            testFunc2 (testSrt1, testObject2) { // {#} -w -sign -count
+                // console.count('test')
             },
 
             testFunc3 () {
