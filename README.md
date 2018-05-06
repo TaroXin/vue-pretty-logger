@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/TaroXin/vue-pretty-logger.svg?branch=master)](https://travis-ci.org/TaroXin/vue-pretty-logger)
 
+[![MIT Licence](https://img.shields.io/npm/l/express.svg)](https://opensource.org/licenses/mit-license.php)
+
 ### Table of content
 
 * [Introduce](#introduce)
@@ -117,35 +119,45 @@ module: {
 
 <span id="options"></span>
 ### Options
-| name | effect | default |note |
-| - | :- | :-: | -: | 
-| tag | Globally specified log display tag  |  |  |
-| hook | Globally specified log Hook  | # |  |
-| infoTag | Globally specified log info tag  | INFO |  |
-| infoTagStyle | Globally specified log info tag style  |  |  |
-| warnTag | Globally specified log warn tag  | WARN |  |
-| warnTagStyle | Globally specified log warn tag style  |  |  |
-| debugTag | Globally specified log debug tag  | DEBUG |  |
-| debugTagStyle | Globally specified log debug tag style  |  |  |
-| errorTag | Globally specified log error tag  | ERROR |  |
-| errorTagStyle | Globally specified log error tag style  |  |  |
 
-
+* **tag**
+`Globally specified log display tag`
+`default: ''`
+* **hook**
+`Globally specified log Hook`
+`default: '#'`
+* **infoTag**
+`Globally specified log info tag`
+`default: 'INFO'`
+* **infoTagStyle**
+`Globally specified log info tag style`
+`default: ''`
+* **error, debug, warn are the same as info**
+ 
 <span id="commands"></span>
 ### Commands
 
-| name | effect | note |
-| - | :- | - |
-| -e | Output as error |  |
-| -d | Output as debug |  |
-| -w | Output as warn |  |
-| -i | Output as info |  |
-| -t | Specify local log comment tag |  |
-| -sign | The variable name corresponding to the output value when outputting the value |  |
-| -count | Number of times the output function was called | Only valid at function declaration |
-| -time | Output function execution time-consunming | Only valid at function call |
-| -profile | Create a profile for your function | Only valid at function call |
-| -stop | Stop default actions | |
-
-
+* **-e**
+`Output as error`
+* **-d**
+`Output as debug`
+* **-w**
+`Output as warn`
+* **-i**
+`Output as info`
+* **-t**
+`Specify local log comment tag`
+* **-sign**
+`The variable name corresponding to the output value when outputting the value`
+* **-count**
+`Number of times the output function was called`
+`Only valid at function declaration`
+* **-time**
+`Output function execution time-consunming`
+`Only valid at function call`
+* **-profile**
+`Create a profile for your function`
+`Only valid at function call`
+* **-stop**
+`Stop default actions`
 
