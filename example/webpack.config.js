@@ -25,7 +25,7 @@ module.exports = {
                         loader: path.join(__dirname, '../lib/index.js'),
                         options: {
                             tag: 'Pretty_Logger',
-                            dev: true,
+                            hook: '#'
                         }
                     }
                 ]

@@ -36,7 +36,7 @@
             // recommend to use this like this
             this.testFunc4(1, {count: 1}) // {#}
 
-            this.testFunc5('with -time') // {#} -time -sign
+            this.testFunc5('with -time') // {LOG} -time -sign
 
             this.testFunc6('with -profile') // {#} -stop -profile
         },
