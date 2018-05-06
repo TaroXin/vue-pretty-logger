@@ -1,6 +1,17 @@
 <template>
-    <div class="test">
-        Cool logger for Vue !!!
+    <div class="container">
+        <header class="header">Vue-Pretty-Logger</header>
+        <section class="section">
+            The console is more cool to use, easier to debug, and more fun log output. Enjoy the vue-pretty-logger in the vue project.
+        </section>
+        <section class="section">
+            npm install vue-pretty-logger -D
+            <br><br>
+            yarn add --dev vue-pretty-logger
+        </section>
+        <section class="section">
+           Please press F12 !!!
+        </section>
     </div>
 </template>
 
@@ -67,3 +78,36 @@
         }
     }
 </script>
+
+
+<style scoped>
+    .container {
+        width: 100%;
+        height: 100%;
+        background: #e9e9e9;
+        font-family: 'Source Code Pro', 'Courier New', Courier, monospace 
+    }
+    .header {
+        position: relative;
+        height: 150px;
+        text-align: center;
+        top: 100px;
+        font-size: 80px;
+        font-weight: bold;
+        color: #41B883;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .section {
+        position: relative;
+        top: 60px;
+        width: 700px;
+        padding: 15px 25px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        background: #333;
+        color: #FFF;
+        margin-bottom: 15px;
+    }
+</style>

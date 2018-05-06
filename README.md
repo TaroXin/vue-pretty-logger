@@ -1,14 +1,15 @@
 # vue-pretty-logger
 
-[![Build Status](https://travis-ci.org/TaroXin/vue-pretty-logger.svg?branch=master)](https://travis-ci.org/TaroXin/vue-pretty-logger)
+[![Scrutinizer Build](https://img.shields.io/npm/v/vue-pretty-logger.svg?style=for-the-badge)](https://www.npmjs.com/package/vue-pretty-logger) [![Scrutinizer Build](https://img.shields.io/scrutinizer/build/g/filp/whoops.svg?style=for-the-badge)](https://travis-ci.org/TaroXin/vue-pretty-logger) [![npm](https://img.shields.io/npm/l/express.svg?style=for-the-badge)
+](https://opensource.org/licenses/mit-license.php)
 
-[![MIT Licence](https://img.shields.io/npm/l/express.svg)](https://opensource.org/licenses/mit-license.php)
 
 ### Table of content
 
 * [Introduce](#introduce)
 * [Install](#install)
 * [Usage](#usage)
+* [Example](#example)
 * [Options](#options)
 * [Commands](#commands)
 
@@ -116,6 +117,10 @@ module: {
   }
 </script>
 ```
+
+<span id="example"></span>
+### Example
+Example can be found in `example/`
 
 <span id="options"></span>
 ### Options
