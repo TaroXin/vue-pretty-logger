@@ -1,4 +1,4 @@
-const loaderParser = require('../lib/logger-parser')
+const loaderParser = require('../lib/utils/logger-parser')
 
 test('test parse logger with normal', () => {
     let test = 'let a = 0 // {#}'
