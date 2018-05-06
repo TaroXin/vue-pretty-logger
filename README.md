@@ -1,7 +1,5 @@
 # vue-pretty-logger
 
-> **NOTE:** This is a loader of .vue file
-
 [![Build Status](https://travis-ci.org/TaroXin/vue-pretty-logger.svg?branch=master)](https://travis-ci.org/TaroXin/vue-pretty-logger)
 
 ### Table of content
