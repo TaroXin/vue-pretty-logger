@@ -52,12 +52,15 @@
             testFunc3 () {
                 return 'Hello, I\'m return!'
             },
+
             testFunc4 (num, data) {
                 return num + data.count
             },
+
             testFunc5 (command) {
                 
             },
+            
             testFunc6 (command) {
 
             }
