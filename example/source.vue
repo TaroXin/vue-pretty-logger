@@ -18,38 +18,49 @@
 <script>
     export default {
         mounted () {
-            /**
-             * test assignment
-             */
-            let a = 123 // {#} -sign
+            // /**
+            //  * test assignment
+            //  */
+            // let a = 123 // {#} -sign
 
-            let b
-            b = 456 // {#} -i -t TEST -sign
+            // let b
+            // b = 456 // {#} -i -t TEST -sign
 
-            /**
-             * test function declaration
-             */
-            this.testFunc1("This is testFunc1")
-            this.testFunc2("This is testFunc2", {
-                name: 'Yangxin',
-                age: '15'
-            })
+            // /**
+            //  * test function declaration
+            //  */
+            // this.testFunc1("This is testFunc1")
+            // this.testFunc2("This is testFunc2", {
+            //     name: 'Yangxin',
+            //     age: '15'
+            // })
 
-            /**
-             * test function call
-             */
-            this.testFunc3() // {#} -w -sign
+            // /**
+            //  * test function call
+            //  */
+            // this.testFunc3() // {#} -w -sign
             
-            // no support for the time being
-            // this.testFunc4(1, { // {#}
-            //     count: 1
-            // }) 
-            // recommend to use this like this
-            this.testFunc4(1, {count: 1}) // {#}
+            // // no support for the time being
+            // // this.testFunc4(1, { // {#}
+            // //     count: 1
+            // // }) 
+            // // recommend to use this like this
+            // this.testFunc4(1, {count: 1}) // {#}
 
-            this.testFunc5('with -time') // {LOG} -time -sign
+            // this.testFunc5('with -time') // {LOG} -time -sign
 
-            this.testFunc6('with -profile') // {#} -stop -profile
+            // this.testFunc6('with -profile') // {#} -stop -profile
+
+            // let str1 = 'Hello World' // {#}
+
+
+
+            // let str2 = 'Hello World' // {#} -e
+            // let str3 = 'Hello World' // {#} -d
+            // let str4 = 'Hello World' // {#} -w
+            // let str5 = 'Hello World' // {#} -i
+
+            this.testFunc('Hello', 'World') // {#} -time -stop
         },
 
         methods: {
@@ -73,6 +84,10 @@
             },
             
             testFunc6 (command) {
+
+            },
+
+            testFunc (p1, p2) { // {#} -i -t TestFunc -sign -count
 
             }
         }

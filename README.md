@@ -4,6 +4,7 @@
 ](https://opensource.org/licenses/mit-license.php)
 
 
+[README for Chinese](https://juejin.im/post/5aef271c51882506a36c69a7)
 ### Table of content
 
 * [Introduce](#introduce)
