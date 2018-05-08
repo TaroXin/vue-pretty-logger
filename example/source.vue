@@ -74,9 +74,11 @@
             // this.tes$tObj.test('Return me!', (val) => { // {#} -e -sign
 
             // })
-            this.testLambda$().test('Return me!', (val) => { // {#}
-                
-            })  
+            // this.testLambda$().test((val) => { // {#} -e
+
+            // }) 
+
+            this.testAsync()
         },
 
         methods: {
@@ -109,10 +111,26 @@
 
             testLambda$() {
                 return {
-                    test (str1, func2) {
-                        func2('to', 'form')
+                    test (func2) {
+                        func2('Return Me!')
                     }
                 }
+            },
+
+            testAsync () {
+                async function test () {
+                    await test2() // {#} -time -profile
+                }
+
+                function test2 () {
+                    return new Promise((resolve, reject) => {
+                        resolve('I am return')
+                    })
+                }
+
+                test().then((val) => {
+                    console.log(val)
+                })
             }
         }
     }
