@@ -78,7 +78,8 @@
 
             // }) 
 
-            this.testAsync()
+            // this.testAsync()
+            this.testFunc("p1", "p2") 
         },
 
         methods: {
