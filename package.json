@@ -15,7 +15,10 @@
   "scripts": {
     "test": "jest",
     "dev": "webpack-dev-server --config example/webpack.config.js --inline --hot",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "pregit": "yarn test && yarn changelog",
+    "git": "git add . && git cz",
+    "postgit": "git push origin master"
   },
   "repository": {
     "type": "git",
