@@ -17,6 +17,15 @@
 
 <script>
     export default {
+        data () {
+            return {
+                tes$tObj: {
+                    test (str1, func2) {
+                        func2(str1)
+                    }
+                }
+            }
+        },
         mounted () {
             // /**
             //  * test assignment
@@ -60,7 +69,14 @@
             // let str4 = 'Hello World' // {#} -w
             // let str5 = 'Hello World' // {#} -i
 
-            this.testFunc('Hello', 'World') // {#} -time -stop
+            // this.testFunc('Hello', 'World') // {#} -time -stop
+
+            // this.tes$tObj.test('Return me!', (val) => { // {#} -e -sign
+
+            // })
+            this.testLambda$().test('Return me!', (val) => { // {#}
+                
+            })  
         },
 
         methods: {
@@ -89,6 +105,14 @@
 
             testFunc (p1, p2) { // {#} -i -t TestFunc -sign -count
 
+            },
+
+            testLambda$() {
+                return {
+                    test (str1, func2) {
+                        func2('to', 'form')
+                    }
+                }
             }
         }
     }
