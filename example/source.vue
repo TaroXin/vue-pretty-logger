@@ -79,10 +79,15 @@
             // }) 
 
             // this.testAsync()
-            this.testFunc("p1", "p2") 
+            // this.testFunc("p1", "p2") 
+
+            this.testForm("hello", "world") // {#} -from -sign
         },
 
         methods: {
+            testForm (p1, p2) { // {#} -sign
+                
+            },
             testFunc1 (testStr) { // {#} -e
                 // console.log(testStr)
             },
@@ -118,9 +123,9 @@
                 }
             },
 
-            testAsync () {
-                async function test () {
-                    await test2() // {#} -time -profile
+            async testAsync (p) { // {#} -sign
+                async function test () { 
+                    await test2() 
                 }
 
                 function test2 () {

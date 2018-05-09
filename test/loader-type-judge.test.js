@@ -7,7 +7,7 @@ test('test loggerTypeJudge assignment', () => {
         index: 10
     }
 
-    const ouput = {
+    const output = {
         logger: '// {#}',
         input: 'let a = 0',
         var: 'a',
@@ -15,7 +15,7 @@ test('test loggerTypeJudge assignment', () => {
         functionName: ''
     }
     
-    expect(JSON.stringify(loggerTypeJudge(input.logger, input.input, input.index))).toBe(JSON.stringify(ouput))
+    expect(JSON.stringify(loggerTypeJudge(input.logger, input.input, input.index))).toBe(JSON.stringify(output))
 })
 
 test('test loggerTypeJudge function', () => {
@@ -25,7 +25,7 @@ test('test loggerTypeJudge function', () => {
         index: 14
     }
 
-    const ouput = {
+    const output = {
         logger: '// {#}',
         input: 'test (a, b) {',
         var: ['a', ' b'],
@@ -33,7 +33,7 @@ test('test loggerTypeJudge function', () => {
         functionName: 'test'
     }
     
-    expect(JSON.stringify(loggerTypeJudge(input.logger, input.input, input.index))).toBe(JSON.stringify(ouput))
+    expect(JSON.stringify(loggerTypeJudge(input.logger, input.input, input.index))).toBe(JSON.stringify(output))
 })
 
 test('test loggerTypeJudge function call', () => {
@@ -43,15 +43,15 @@ test('test loggerTypeJudge function call', () => {
         index: 18
     }
 
-    const ouput = {
+    const output = {
         logger: '// {#}',
         input: 'this.test(p1, p2)',
-        var: '',
+        var: ['p1', ' p2'],
         type: 'FUNCTION_CALL',
         functionName: 'test'
     }
     
-    expect(JSON.stringify(loggerTypeJudge(input.logger, input.input, input.index))).toBe(JSON.stringify(ouput))
+    expect(JSON.stringify(loggerTypeJudge(input.logger, input.input, input.index))).toBe(JSON.stringify(output))
 })
 
 test('test loggerTypeJudge function call with await', () => {
@@ -61,15 +61,15 @@ test('test loggerTypeJudge function call with await', () => {
         index: 13
     }
 
-    const ouput = {
+    const output = {
         logger: '// {#}',
         input: 'await test()',
-        var: '',
+        var: [],
         type: 'FUNCTION_CALL',
         functionName: 'test'
     }
     
-    expect(JSON.stringify(loggerTypeJudge(input.logger, input.input, input.index))).toBe(JSON.stringify(ouput))
+    expect(JSON.stringify(loggerTypeJudge(input.logger, input.input, input.index))).toBe(JSON.stringify(output))
 })
 
 test('test loggerTypeJudge function callback', () => {
@@ -79,7 +79,7 @@ test('test loggerTypeJudge function callback', () => {
         index: 32
     }
 
-    const ouput = {
+    const output = {
         logger: '// {#}',
         input: 'this.test("test", (result) => {',
         var: ['result'],
@@ -87,5 +87,5 @@ test('test loggerTypeJudge function callback', () => {
         functionName: 'test'
     }
     
-    expect(JSON.stringify(loggerTypeJudge(input.logger, input.input, input.index))).toBe(JSON.stringify(ouput))
+    expect(JSON.stringify(loggerTypeJudge(input.logger, input.input, input.index))).toBe(JSON.stringify(output))
 })
