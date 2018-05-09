@@ -30,7 +30,7 @@
             // /**
             //  * test assignment
             //  */
-            // let a = 123 // {#} -sign
+            let a = 123 // {#} -sign
 
             // let b
             // b = 456 // {#} -i -t TEST -sign
@@ -81,7 +81,7 @@
             // this.testAsync()
             // this.testFunc("p1", "p2") 
 
-            this.testForm("hello", "world") // {#} -from -sign
+            // this.testForm("hello", "world") // {#} -from -sign -e
         },
 
         methods: {

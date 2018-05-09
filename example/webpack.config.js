@@ -36,7 +36,7 @@ module.exports = {
             },
             {
                 test: /\.js$/,
-                loader: 'babel-loader',
+                use: ['babel-loader', path.join(__dirname, '../lib/in-js.js')],
                 exclude: /node_modules/
             }
         ]
