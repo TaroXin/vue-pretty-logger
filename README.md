@@ -13,6 +13,7 @@
 * [Example](#example)
 * [Options](#options)
 * [Commands](#commands)
+* [Change Log](#changeLog)
 
 <span id="introduce"></span>
 ### What is Vue pretty logger loader ?
@@ -166,4 +167,56 @@ Example can be found in `example/`
 `Only valid at function call`
 * **-stop**
 `Stop default actions`
+
+<span id="changeLog"></span>
+### Change Log
+* `V0.9.0` [issues](https://github.com/TaroXin/vue-pretty-logger/issues/8)
+``` javascript
+// add support for js files
+
+{
+    test: /\.js$/,
+    use: ['babel-loader', 'vue-pretty-logger/lib/in-js'],
+    exclude: /node_modules/
+}
+```
+
+* `V0.8.8` [issues](https://github.com/TaroXin/vue-pretty-logger/issues/5)
+``` javascript
+// add the -form command
+
+this.testFuncCall(p1, p2) // {#} -sign -from
+
+// equals:
+console.log(`p1: ${p1}, p2: ${p2}`)
+const result = this.testFuncCall(p1, p2)
+console.log(`result: ${result}`)
+```
+
+* `V0.8.7` [issues](https://github.com/TaroXin/vue-pretty-logger/issues/3)
+``` javascript
+// Add support for await statements, consistent with function call
+
+await test() // {#} -e -sign -time
+// equals: const result = await test(); console.error(`result: ${result}`)
+```
+
+* `V0.8.6` [issues](https://github.com/TaroXin/vue-pretty-logger/issues/2)
+``` javascript
+// Support callback function use, output callback function parameters.
+
+this.$bus.$on('gotData', (data) => { // {#} -i -sign
+    // equals: console.info(`data: ${data}`)
+})
+
+this.$bus.$on('gotData', function (data) { // {#} -i -sign
+    // equals: console.info(`data: ${data}`)
+})
+
+```
+
+* `V0.8.5` [issues](https://github.com/TaroXin/vue-pretty-logger/issues/1)
+```
+fix bug: Can not read property 'content' of null
+```
 
